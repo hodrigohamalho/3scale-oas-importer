@@ -1,0 +1,51 @@
+{
+  "name": "3scale-oas-import",
+  "description": "3Scale OAS Import",
+  "version": "0.10.1",
+  "main": "server.js",
+  "author": {
+    "name": "pszuster"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hodrigohamalho/3scale-oas-import.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "preferGlobal": true,
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "1.17.2",
+    "colors": "^0.6.2",
+    "commander": "^2.2.0",
+    "cors": "^2.8.3",
+    "delay-promise": "^2.1.0",
+    "easy-table": "^1.0.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "http-error-constructor": "^0.1.0",
+    "inquirer": "^3.1.0",
+    "mkdirp": "^0.5.1",
+    "nconf": "^0.8.4",
+    "os-homedir": "^1.0.1",
+    "prettyjson": "*",
+    "prompt": "^1.0.0",
+    "q": "^1.4.1",
+    "raml-1-parser": "*",
+    "request": "^2.60.0",
+    "slug": "^0.9.1",
+    "swagger-parser": "6.0.1",
+    "underscore": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "devDependencies": {}
+}
