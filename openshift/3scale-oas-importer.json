@@ -10,8 +10,7 @@
       "iconClass": "icon-nodejs",
       "template.openshift.io/long-description": "Web Tooling to import OAS aka Swagger to 3Scale API Management Platform.",
       "template.openshift.io/provider-display-name": "Red Hat, Inc.",
-      "template.openshift.io/documentation-url": 
-      ,
+      "template.openshift.io/documentation-url": "https://github.com/hodrigohamalho/3scale-oas-importer",
       "template.openshift.io/support-url": "https://access.redhat.com"
     }
   },
