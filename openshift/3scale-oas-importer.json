@@ -83,8 +83,7 @@
           "git": {
             "uri": "${SOURCE_REPOSITORY_URL}",
             "ref": "${SOURCE_REPOSITORY_REF}"
-          },
-          "contextDir": "${CONTEXT_DIR}"
+          }
         },
         "strategy": {
           "type": "Source",
@@ -226,7 +225,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "threescale-swagger-importer"
+      "value": "oas-importer"
     },
     {
       "name": "NAMESPACE",
@@ -254,12 +253,6 @@
       "displayName": "Git Reference",
       "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch.",
 	    "value": "master"
-    },
-    {
-      "name": "CONTEXT_DIR",
-      "displayName": "Context Directory",
-      "description": "Set this to the relative path to your project if it is not in the root of your repository.",
-      "value": "3scale-Swagger-Import"
     },
     {
       "name": "APPLICATION_DOMAIN",
