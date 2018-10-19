@@ -1,31 +1,82 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <title>3Scale Import</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=openshift.com"/>
+	<link rel="stylesheet" href="css/patternfly/patternfly.min.css"/>
+	<link rel="stylesheet" href="css/patternfly/patternfly-additions.min.css"/>
+	<link rel="stylesheet" href="css/thirdparty/lobipanel.min.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<meta charset="UTF-8" />
+	<title>3Scale OAS Importer</title>
 </head>
+
 <body>
-   <img src="3scale-by-redhat.png" style="width:15%;height:15%;"/>
-   <h1>Swagger Import Tool (non-official)</h1>
-	<form action="/import" method="POST" class="form-horizontal">
-		<table class="table table-bordered">
-		<tr>
-			<td>Access Token:</td><td> <input type="text" name="access_token" size="80"/></td>
-		</tr>
-		<tr>
-			<td>3Scale ID:</td><td> <input type="text" name="threescale_id" size="20"/></td>
-		</tr>
-		<tr>
-			<td>Wildcard Domain:</td><td><input type="text" name="wildcard_domain" size="30"/></td>
-		</tr>
-		<tr>
-			<td>Swagger file URL:</td><td> <input type="text" name="swagger_file" size="80"/></td>
-		</tr>
-		</table>
-		<input type="submit" value="Import API" class="btn btn-primary"/>
-	</form>
+	<nav class="navbar navbar-default navbar-pf" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="/">
+				<img width="200px" src="images/Logotype_RH_OpenShift_wLogo_RGB_White.png" alt="Openshift"></img>
+				<p>3Scale OAS Importer </p>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-primary">
+				<li >
+					<a href="/">Importer</a>
+				</li>
+				<li>
+					<a href="/help.html">Help ?</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	  
+	<div class="container-fluid">	
+		<div class="card-pf-body"> 
+			<div>
+				<h1>3Scale OAS Import Tool</h1>
+				<form action="/import" method="POST" class="form-horizontal">
+					<div class="3scale-config">
+						<div class="form-group row">
+							<label for="input-access-token" class="col-sm-2 col-form-label">Access Token</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="access_token" id="input-access-token" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="input-threescale_id" class="col-sm-2 col-form-label">3Scale ID</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="threescale_id" id="input-threescale_id" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="input-wildcard_domain" class="col-sm-2 col-form-label">Wildcard Domain</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="wildcard_domain" id="input-wildcard_domain" />
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="input-swagger_file" class="col-sm-2 col-form-label">Swagger file URL</label>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" name="swagger_file" id="input-swagger_file" />
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">.</label>
+						<div class="col-sm-5">
+							<button type="submit" class="btn btn-primary">Import API</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<script type="text/javascript" src="js/thirdparty/bootstrap.min.js"></script>
 </body>
 </html>

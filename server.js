@@ -13,6 +13,7 @@ var express = require('express'),
 app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/images'));
+app.use(express.static('views'));
 app.use(cors());
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
