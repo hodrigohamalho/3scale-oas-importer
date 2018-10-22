@@ -16,7 +16,12 @@ Currently it import:
 
 ## Install on Openshift
 
+Import the template
+
     oc create -f openshift/3scale-oas-importer.json -n openshift 
+
+Create the app
+
     oc new-app 3scale-oas-importer
 
 ## Running Local
