@@ -12,7 +12,7 @@ Currently it import:
 
 ![](docs/metadata.png)
 ![](docs/mapping-rules.png)
-![](docs/methods-rules.png)
+![](docs/methods.png)
 
 ## Install on Openshift
 
