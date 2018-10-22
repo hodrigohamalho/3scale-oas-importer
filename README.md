@@ -6,13 +6,21 @@ This is a web tooling to import OAS aka Swagger specifications on 3Scale.
 
 Currently it import:
 
-* Mapping Rules 
-* Methods
-* ActiveDocs (Swagger 2.0)
+* API definition
 
 ![](docs/metadata.png)
+
+* Mapping Rules 
+
 ![](docs/mapping-rules.png)
+
+* Methods
+
 ![](docs/methods.png)
+
+* ActiveDocs (Swagger 2.0)
+
+![](docs/activedocs.png)
 
 ## Install on Openshift
 
