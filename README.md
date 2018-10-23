@@ -22,6 +22,10 @@ Currently it import:
 
 ![](docs/activedocs.png)
 
+* Plans
+
+Creates a default plan.
+
 ## Install on Openshift
 
 Import the template
