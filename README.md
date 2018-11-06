@@ -2,6 +2,8 @@
 
 This is a web tooling to import OAS aka Swagger specifications on 3Scale.
 
+Test live: http://oas-importer.apps.paas.dc1.rhbrlab.com/
+
 ![](docs/oas-importer.png)
 
 Currently it import:
